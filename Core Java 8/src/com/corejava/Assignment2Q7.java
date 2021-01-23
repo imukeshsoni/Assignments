@@ -94,6 +94,7 @@ public class Assignment2Q7 {
         int quantity = sc.nextInt();
         placeOrderOperation(choice, quantity);
     }
+
     private void placeOrderOperation(int choice, int quantity) {
         int total=0;
         switch (choice){
