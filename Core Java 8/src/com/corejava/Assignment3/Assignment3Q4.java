@@ -1,7 +1,6 @@
-package com.corejava;
+package com.corejava.Assignment3;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 class DateClass {

@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment2;
 
 abstract class Persistence {
     abstract public String persist();

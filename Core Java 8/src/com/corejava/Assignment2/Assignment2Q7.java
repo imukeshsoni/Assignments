@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment2;
 
 import java.util.Scanner;
 

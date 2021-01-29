@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment3;
 
 import java.util.Set;
 import java.util.TreeSet;

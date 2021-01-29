@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment4;
 
 interface Operation{
     public double operation();

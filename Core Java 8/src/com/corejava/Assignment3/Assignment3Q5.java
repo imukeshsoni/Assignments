@@ -1,7 +1,6 @@
-package com.corejava;
+package com.corejava.Assignment3;
 
 import java.util.HashMap;
-import java.util.Objects;
 
 class Employee {
     private String name;

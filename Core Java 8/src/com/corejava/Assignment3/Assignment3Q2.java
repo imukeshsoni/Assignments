@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment3;
 import java.util.*;
 public class Assignment3Q2 {
     public static void main(String[] args) {

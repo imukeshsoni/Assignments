@@ -1,4 +1,4 @@
-package com.corejava;
+package com.corejava.Assignment4;
 
 import java.util.ArrayList;
 import java.util.function.Function;
