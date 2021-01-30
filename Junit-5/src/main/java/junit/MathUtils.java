@@ -11,4 +11,7 @@ public class MathUtils {
     public double computeCircleRadius(double radius){
         return Math.PI * radius * radius;
     }
+    public double divide (int a, int b){
+        return a/b;
+    }
 }
