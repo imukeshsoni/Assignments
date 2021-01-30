@@ -4,7 +4,11 @@ import org.junit.jupiter.api.Test;
 
 public class MathUtils {
     @Test
-    public int add(int a, int b){
+    public int testAdd(int a, int b){
         return a+b;
+    }
+
+    public double computeCircleRadius(double radius){
+        return Math.PI * radius * radius;
     }
 }
