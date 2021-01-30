@@ -10,7 +10,13 @@ public class MathUtilsTest {
     void test(){
         MathUtils mathUtils = new MathUtils();
         int expected = 2;
-        int actual = mathUtils.add(1,1);
+        int actual = mathUtils.testAdd(1,1);
         assertEquals(expected, actual);
+    }
+    @Test
+    void testComputeCircleRadius(){
+        MathUtils mathUtils = new MathUtils();
+        double radius = 10.0;
+        assertEquals((Math.PI * radius * radius), mathUtils.computeCircleRadius(radius));
     }
 }
