@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- Bean initialization for Address class -->
+    <bean id="address" class="com.example.demo.Address">
+        <property name="street" value="Bank Street"/>
+        <property name="city" value="California"/>
+        <property name="state" value="CA"/>
+        <property name="country" value="United States"/>
+        <property name="zip" value="54003"/>
+    </bean>
+    <!-- Bean initialization for Customer class
+
+    <bean id="customer" class="com.example.demo.Customer">
+        <property name="customerId" value="111011"/>
+        <property name="customerContact" value="99999999"/>
+        <property name="customerName" value="Mukesh"/>
+    </bean> -->
+
+</beans>

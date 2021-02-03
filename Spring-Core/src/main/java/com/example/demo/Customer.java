@@ -1,4 +1,4 @@
-package com.springdemo.demo;
+package com.example.demo;
 
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.ApplicationContext;
@@ -11,23 +11,7 @@ public class Customer {
     private String customerAddress;
     private int customerContact;
 
-    ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-    Address address = (Address) context.getBean("address");
-    Customer(){
-//        GenericApplicationContext context = new GenericApplicationContext();
-//        new XmlBeanDefinitionReader(context).loadBeanDefinitions("spring.xml");
-//        context.refresh();
-//
-    }
-    public static void main(String[] args) {
-
-    }
-
-    public String getCustomerAddress(){
-        String address = "Street : " + this.address.getStreet() + "City : " +
-                this.address.getCity() + "State : "+ this.address.getState() + "ZIP :"+ this.address.getZip();
-        return address;
-    }
+    Address address;
 
     public int getCustomerId() {
         return customerId;
@@ -45,6 +29,10 @@ public class Customer {
         this.customerName = customerName;
     }
 
+    public String getCustomerAddress() {
+        return customerAddress;
+    }
+
     public void setCustomerAddress(String customerAddress) {
         this.customerAddress = customerAddress;
     }
@@ -55,5 +43,13 @@ public class Customer {
 
     public void setCustomerContact(int customerContact) {
         this.customerContact = customerContact;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
