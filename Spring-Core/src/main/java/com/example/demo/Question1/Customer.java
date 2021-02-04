@@ -1,9 +1,4 @@
-package com.example.demo;
-
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.GenericApplicationContext;
+package com.example.demo.Question1;
 
 public class Customer {
     private int customerId;

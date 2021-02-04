@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.Question1.Address;
+import com.example.demo.Question1.Customer;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class AddressTest {
@@ -11,7 +13,7 @@ public class AddressTest {
         customer.setAddress(address);
         String expected = address.toString();
         Address actual = customer.getAddress();
-        assertEquals(expected , actual.toString() );
+        assertEquals(expected , actual.toString());
     }
 
 }

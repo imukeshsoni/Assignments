@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Question1;
 
 public class Address {
     private String street;
@@ -10,6 +10,8 @@ public class Address {
     public String getStreet() {
         return street;
     }
+
+    public Address(){}
 
     public Address(String street, String city, String state, String country, int zip) {
         this.street = street;

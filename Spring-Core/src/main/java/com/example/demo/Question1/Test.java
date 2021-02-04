@@ -1,9 +1,6 @@
-package com.example.demo;
+package com.example.demo.Question1;
 
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.GenericApplicationContext;
 
 public class Test {
     public static void main(String[] args) {

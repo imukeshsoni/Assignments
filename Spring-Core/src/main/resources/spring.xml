@@ -5,19 +5,22 @@
 
 
     <!-- Bean initialization for Address class -->
-    <bean id="address" class="com.example.demo.Address">
+    <bean id="address" class="com.example.demo.Question1.Address">
         <property name="street" value="Bank Street"/>
         <property name="city" value="California"/>
         <property name="state" value="CA"/>
         <property name="country" value="United States"/>
         <property name="zip" value="54003"/>
     </bean>
-    <!-- Bean initialization for Customer class
-
-    <bean id="customer" class="com.example.demo.Customer">
-        <property name="customerId" value="111011"/>
-        <property name="customerContact" value="99999999"/>
-        <property name="customerName" value="Mukesh"/>
-    </bean> -->
-
+    <!-- Bean initialization for Question class -->
+    <bean id="question" class="Question2.Question">
+        <property name="question" value="What is your name?"/>
+        <property name="questionId" value="1"/>
+        <property name="answer" >
+            <list>
+                <value>My name is Mukesh</value>
+                <value>My name is Vicky</value>
+            </list>
+        </property>
+    </bean>
 </beans>
