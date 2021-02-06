@@ -3,6 +3,7 @@ package Question5;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.Resource;
+import javax.inject.Inject;
 
 public class Circle implements Shape{
     private Point center;
@@ -17,7 +18,8 @@ public class Circle implements Shape{
     public Point getCenter() {
         return center;
     }
-    @Resource(name = "pointA")
+    // Inject annotation mathces byType first so it accessed "pointA" bean in spring.xml
+    @Inject
     public void setCenter(Point center) {
         this.center = center;
     }
