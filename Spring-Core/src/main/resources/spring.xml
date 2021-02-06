@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
     <!-- Bean initialization for Address class -->
@@ -26,12 +27,13 @@
 
     <!-- Point class references -->
 
-    <bean id="circle" class="Question5.Circle" autowire="byName">
-<!--        <property name="center" ref="pointA" />-->
+    <bean id="circle" class="Question5.Circle">
     </bean>
 
-    <bean id="center" class="Question5.Point">
+    <bean id="pointA" class="Question5.Point">
         <property name="x" value="0" />
         <property name="y" value="0" />
     </bean>
+
+    <context:annotation-config />
 </beans>

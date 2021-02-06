@@ -1,5 +1,9 @@
 package Question5;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.Resource;
+
 public class Circle implements Shape{
     private Point center;
 
@@ -13,7 +17,7 @@ public class Circle implements Shape{
     public Point getCenter() {
         return center;
     }
-
+    @Resource(name = "pointA")
     public void setCenter(Point center) {
         this.center = center;
     }
