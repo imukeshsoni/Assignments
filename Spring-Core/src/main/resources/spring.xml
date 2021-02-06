@@ -26,11 +26,11 @@
 
     <!-- Point class references -->
 
-    <bean id="circle" class="Question5.Circle">
-        <property name="center" ref="pointA" />
+    <bean id="circle" class="Question5.Circle" autowire="byName">
+<!--        <property name="center" ref="pointA" />-->
     </bean>
 
-    <bean id="pointA" class="Question5.Point">
+    <bean id="center" class="Question5.Point">
         <property name="x" value="0" />
         <property name="y" value="0" />
     </bean>
