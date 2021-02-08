@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <!-- Bean initialization for Address class -->
+    <!-- Bean initialization for Address class
     <bean id="address" class="com.example.demo.Question1.Address">
         <property name="street" value="Bank Street"/>
         <property name="city" value="California"/>
@@ -13,7 +13,10 @@
         <property name="country" value="United States"/>
         <property name="zip" value="54003"/>
     </bean>
-    <!-- Bean initialization for Question class -->
+
+    -->
+
+    <!-- Bean initialization for Question class
     <bean id="question" class="Question2.Question">
         <property name="question" value="What is your name?"/>
         <property name="questionId" value="1"/>
@@ -24,16 +27,28 @@
             </list>
         </property>
     </bean>
+    -->
 
     <!-- Point class references -->
 
-    <bean id="circle" class="Question5.Circle">
+    <bean id="circle" class="Question6.Circle">
     </bean>
 
-    <bean id="center" class="Question5.Point">
+    <bean id="center" class="Question6.Point">
         <property name="x" value="0" />
         <property name="y" value="0" />
     </bean>
 
+
+    <bean id="configDetails" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>dbconfig</value>
+            </list>
+        </property>
+    </bean>
+
     <context:annotation-config />
 </beans>
+
+
