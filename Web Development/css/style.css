@@ -1,0 +1,44 @@
+.q1 h1{
+    background-color: #55f;
+}
+
+.q1{
+    background-color: #aad;
+}
+.q1 p{
+    background-color: rgb(53, 211, 216);
+}
+
+.q2{
+    background-color: #adf;
+}
+
+#p1{
+    text-transform: uppercase;
+}
+
+a:visited{
+    color: pink;
+    
+}
+
+.q3 table, th, td{
+    border: 1px solid black;
+    
+}
+.q4 table th{
+    border: 2px solid green;
+    background-color: green;
+    padding: 5px;
+    color: white;
+    margin: 2px;
+    
+}
+.q4 td{
+    border-color: green;
+}
+.q5 p{
+    border-style: dotted;
+    border-color: green;
+    width: 50%;
+}
