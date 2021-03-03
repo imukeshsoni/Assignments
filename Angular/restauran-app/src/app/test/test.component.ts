@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { StudentDetailsService } from 'src/app/student-details.service';
 
 @Component({
   selector: 'app-test',
@@ -6,16 +7,15 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  @Input('parentData') public name: any;
 
-  @Output() public childEvent = new EventEmitter();
+  public students: any;
 
-  constructor() { }
+  constructor(private _studentDetails: StudentDetailsService) {
+    this.students = this._studentDetails.getStudentDetails();
+  }
 
   ngOnInit(): void {
   }
-  onClickChild() {
-    this.childEvent.emit('Hey Mukesh');
-  }
+
 
 }
