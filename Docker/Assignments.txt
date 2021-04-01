@@ -1,7 +1,5 @@
 Assignment
 
-NOTE: Do not forget to see manual page using "--help" option in command when searching for options/commands for a particular task.
-
 1. Install Docker, either on your native OS or on a VM. Make sure it runs. Type "docker -v" to check if it's installed.
 
 If you can't install or configure Docker, you can use the online docker setup to do the assignment.
@@ -10,14 +8,6 @@ Step2 Click on "continue" button on the left panel
 Step3 Click on "launch.sh" button on the left panel
 Step4 From the right panel use the top console to execute below command:-
 		docker -v
-
-
-Try below commands for help
-	docker --help  ---> This command shows all available options and commands to work with images and containers
-	docker image --help ---> This command shows all the avaialble options and commands to work with docker images
-	docker container --help ---> This command shows all the avaialble options and commands to work with docker containers
-
-NOTE:- DO NOT TRY TO USE INTERNET TO SOLVE ASSIGNMENT, BETTER USE THE ABOVE --help OPTION TO SEE THE MANUAL OF ANY PARTICULAR COMMAND AND FIGURE OUT THE SOLUTIONS ON YOUR OWN.
 
 2. Find a image from dockerhub of your choice(recommeded: nginx), don't use browser, pull the official image from dockerhub
 Ans: a) docker search nginx
